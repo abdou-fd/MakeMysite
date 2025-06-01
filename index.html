@@ -3,32 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakeMysite</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>MakeMysite</title>
 </head>
 <body>
   <header>
-   <a href="#" class="logo"><img src="Opera Snapshot_2025-05-31_155732_www.instagram.com.png" alt="ChicoDev logo" ><span>ChicoDev</span></a>
-   <nav>
-    <a href="#" class="active">Home</a>
-    <a href="#" >Services</a>
-    <a href="#" >Skills</a>
-    <a href="#" >Education</a>
-    <a href="#" >Experience</a>
-    <a href="#" >Contact</a>
-   </nav>
+    <a href="#" class="logo">
+      <img src="Opera Snapshot_2025-05-31_155732_www.instagram.com.png" alt="ChicoDev logo">
+      <span>ChicoDev</span>
+    </a>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
+
   <section class="home" id="home">
-    <div class="home-img">
-      <img src="images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" height="500" alt="Background image">
-    </div>
     <div class="home-content">
       <h1>We Build Modern Websites <span>for Companies</span></h1>
-      <h3 class="typing-text">I'm a <span>Developer</span></h3>
-      <p>
-        We design and develop responsive, SEO-friendly, and high-converting websites tailored to your brand.
-      </p>
+      <h3 class="typing-text">I'm a <span id="typed"></span></h3>
+      <p>We design and develop responsive, SEO-friendly, and high-converting websites tailored to your brand.</p>
       <div class="social-icons">
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -38,56 +37,97 @@
       <a href="#contact" class="btn">Request a Quote</a>
       <a href="#portfolio" class="btn secondary">View Portfolio</a>
     </div>
-    <section class="services" id="services">
-      <h2 class="section-title">Our Services</h2>
-      <div class="services-container">
-        <div class="service-item">
-          <i class="fa-solid fa-code"></i>
-          <h4>Web Development</h4>
-          <p>We create professional, custom-built websites tailored to your business needs, ensuring speed, security, and scalability.</p>
-        </div>
-        <div class="service-item">
-          <i class="fa-solid fa-mobile-alt"></i>
-          <h4>Responsive Design</h4>
-          <p>Your site will look stunning on all devices — from large desktop monitors to mobile phones — ensuring the best user experience.</p>
-        </div>
-        <div class="service-item">
-          <i class="fa-solid fa-paint-brush"></i>
-          <h4>UI/UX Design</h4>
-          <p>We design intuitive and engaging interfaces that make your visitors want to stay and interact with your site.</p>
-        </div>
-        <div class="service-item">
-          <i class="fa-solid fa-search"></i>
-          <h4>SEO Optimization</h4>
-          <p>Get noticed on search engines with our SEO strategies that drive organic traffic to your site.</p>
-        </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-item">
+        <i class="fa-solid fa-code"></i>
+        <h4>Web Development</h4>
+        <p>We create professional, custom-built websites tailored to your business needs.</p>
       </div>
-    </section>    
-  </section>  
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>  
-  <section id="portfolio">
-    <h2>My Recent Projects</h2>
-    <div class="portfolio-grid">
-      <div class="project-card">
-        <img src="images/project1.jpg" alt="Project 1">
-        <h4>Corporate Website</h4>
+      <div class="service-item">
+        <i class="fa-solid fa-mobile-alt"></i>
+        <h4>Responsive Design</h4>
+        <p>Your site will look stunning on all devices, ensuring the best user experience.</p>
       </div>
-      <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 2">
-        <h4>E-commerce Store</h4>
+      <div class="service-item">
+        <i class="fa-solid fa-paint-brush"></i>
+        <h4>UI/UX Design</h4>
+        <p>We design intuitive and engaging interfaces that make your visitors stay.</p>
+      </div>
+      <div class="service-item">
+        <i class="fa-solid fa-search"></i>
+        <h4>SEO Optimization</h4>
+        <p>Get noticed on search engines with our SEO strategies that drive traffic.</p>
       </div>
     </div>
-  </section>  
-  <script src="js/script.js"></script>
-  <h2 class="typing-text"><span></span></h2>
-<h2 class="dynamic-text"></h2>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        <h4>HTML/CSS</h4>
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <h4>JavaScript</h4>
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <h4>React</h4>
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-item">
+        <h4>Node.js</h4>
+        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>My Experience</h2>
+    <div class="experience-container">
+      <div class="experience-item">
+        <h4>Frontend Developer</h4>
+        <p>Company A (2023 - Present)</p>
+        <p>Worked on modern web applications using React and TailwindCSS.</p>
+      </div>
+      <div class="experience-item">
+        <h4>Fullstack Developer</h4>
+        <p>Company B (2021 - 2023)</p>
+        <p>Built full web systems using Node.js, Express, and MongoDB.</p>
+      </div>
+      <div class="experience-item">
+        <h4>Intern Web Designer</h4>
+        <p>Startup C (2020)</p>
+        <p>Designed responsive interfaces and improved UX for client websites.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  
+  <div class="contact-info">
+    <p><strong>Name:</strong> ChicoDev</p>
+    <p><strong>Email:</strong> <a href="faradjouabdou2@gmail.com">faradjouabdou2@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+213541447560">+213 5 41 44 75 60</a></p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/abdou_fd1/#" target="_blank">@abdou_fd1</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/abdou-fd" target="_blank">github.com/abdou-fd</a></p>
+  </div>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
