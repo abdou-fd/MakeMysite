@@ -317,3 +317,95 @@ footer {
 #education {
   display: none;
 }
+/* SMARTPHONES */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  header nav a {
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+  }
+
+  .home-content {
+    padding: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .typing-text {
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .services-container,
+  .skills-container,
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 14px;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  header nav a {
+    margin-left: 15px;
+    font-size: 17px;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  .typing-text {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .services-container,
+  .skills-container,
+  .experience-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
